@@ -3,12 +3,19 @@ textarea {
     font-size: 14px;
     border: solid 2px #9b9b9b;
     border-radius: 1rem;
-    width: 50%;
     height: 45vh;
-    min-width: 300px;
+    min-width: 450px;
     min-height: 60px;
     max-width: 850px;
     max-height: 700px;
     outline: none;
     margin: 5px;
   }
+
+  /*------Media Movil------*/
+
+@media screen and (max-width: 500px){
+  textarea{
+    min-width: 280px;
+  }
+}

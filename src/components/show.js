@@ -1,11 +1,5 @@
 import React from 'react';
-/**
- * Me parece opcional pasar los datos desde App.js hasta Show.js. 
- * 
- * Simplemente, voy a trabajar los datos ingresados en App.js
- *  
- * 
- */
+
 function Show({ text }){
 
     function word(text){
