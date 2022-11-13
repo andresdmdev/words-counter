@@ -5,10 +5,10 @@ import { useState } from 'react';
 
 function App() {
 
-  const [text, setText] = useState(String());
+  const [text, setText] = useState('');
 
-  const input = input => {
-    setText(input.trim());
+  const input = (input) => {
+    setText(input);
   }
 
   return (
