@@ -3,24 +3,26 @@ import { useState } from 'react';
 import '../stylesheets/input.css';
 
 
-function InputTextarea(props){
+function InputTextarea({ onChange }){
     
-    const [input, setInput] = useState(String());
+    const [input, setInput] = useState('');
 
-    const setChange = e => {
+    const setChange = (e) => {
         
         setInput(e.target.value);
 
-        props.onChange(input);
+        onChange(e.target.value);
     }
 
     return(
         <textarea 
-            className=''
             cols={20} 
             rows={10}
             onChange={setChange}
-            placeholder='Write here...'></textarea>
+            value={input}
+            placeholder='Write here...'
+        >
+        </textarea>
     );
 }
 

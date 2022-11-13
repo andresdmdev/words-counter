@@ -8,7 +8,7 @@ function Show({ text }){
     }
 
     return(
-        <p>There are {text.length < 1 ? 0 : text.length + 1} characters and {word(text)} words</p>
+        <p>There are {text.length < 1 ? 0 : text.length} characters and {word(text)} words</p>
     );
 }
 
